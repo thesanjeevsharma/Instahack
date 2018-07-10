@@ -1,0 +1,82 @@
+@import "https://fonts.googleapis.com/css?family=Monoton";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  overflow: hidden;
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+
+.heading{
+  margin-bottom: 20px;
+}
+
+.heading h3{
+  font-family: 'Monoton', cursive;
+}
+
+.steps{
+  margin-bottom: 20px;
+}
+
+.steps ol{
+  margin-left: 15px;
+}
+
+.input-field input{
+  color: #000;
+}
+
+form{
+  margin-bottom: 20px;
+}
+
+.input-field input[type=url]:focus + label {
+  color: dodgerblue!important;
+}
+
+.input-field input[type=url]:focus {
+  border-bottom: 1px solid dodgerblue!important;
+  box-shadow: 0 1px 0 0 dodgerblue!important;
+}
+
+.input-field .prefix.active {
+  color: dodgerblue!important;
+}
+
+.btn-download{
+  width: 100%;
+  border-radius: 25px;
+  background: #ff1744;
+}
+
+.btn-download:hover, .btn-download:active{
+  background: #ff5252!important;
+}
+
+@media screen and (max-width: 600px) {
+  .box{
+    width: 90%;
+  }
+  h3{
+    font-size: 2.5em;
+  }
+}

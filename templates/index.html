@@ -1,55 +1,55 @@
 <!Doctype html>
 <html>
 <head>
-	<title> Download HD Instagram photo online </title>
+	<title>InstaHack | Download Photos</title>
 	<meta name="description" content="Instagram Online Photo Downloader. Simple way to download Instagram pictures online from your browser.">
     <meta name="keywords" content="Download Instagram Photos online, download Instagram pictures, save instagram pictures from browser">
-	<style type="text/css">
-	     #input{
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type=submit] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-		.container{
-			text-align: center;
-			margin: 0 auto;
-			width: 500px;
-			padding-top: 20%;
-		}
-		a{
-		    text-decoration:none;
-
-		}
-
-</style>
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body id="particles-js">
 	<div class="container">
-	<p><b>Download Instagram HD Photos (Full size): right click > save image </b></p>
-	<form action="" method="POST" id="manish">
-		<input type="url" id="input" name="iurl" placeholder="Enter image's link, https://www.instagram.com/p/BTzLiCrF5HC/?taken-by=introvertmac007" autocomplete="off" required >
-		<input type="submit" value="SUBMIT">
-	</form>
-	<p>Made with &hearts; by <a href="https://twitter.com/introvertmac007">@introvertmac007</a></p>
+		<div class="box z-depth-5">
+		<div class="heading center">
+			<h3>InstaHack</h3>
+			<span class="tagline">Download Instagram Photos (Full Resolution)</span>
+		</div>
+		<div class="steps">
+			<em><p>Steps:</p>
+			<ol>
+				<li>Copy post link from Instagram, paste it below and press 'download'.</li>
+				<li>On the next page, Right click and then save it.</li>
+			</ol></em>
+		</div>
+
+		<form action="" method="POST" id="manish">
+			<div class="input-field">
+					<i class="material-icons prefix">insert_link</i>
+          <input type="url" id="input" name="iurl" autocomplete="off" required >
+          <label for="iurl">Enter URL here</label>
+      </div>
+			<input type="submit" value="Download" class="btn btn-large btn-download">
+		</form>
+		<div class="creators center">
+			<p>Made with <span style="color: crimson;">&hearts;</span> by <a href="https://twitter.com/introvertmac007" target="_blank">@introvertmac007</a>
+			<br />
+			Contributors: <a href="https://fb.com/sanjeevsharmaxx" target="_blank">@thesanjeevsharma</a></p>
+		</div>
+	</div>
 	</div>
 	<script>
 	    mixpanel.track_forms("#manish", "Created Account");
 	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+		<script src="js/particles.js"></script>
+		<script>
+		particlesJS.load('particles-js', 'assets/particles.json', function() {
+		console.log('callback - particles.js config loaded');
+		});
+		</script>
 </body>
 </html>
